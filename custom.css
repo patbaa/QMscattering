@@ -1,0 +1,39 @@
+<!-- enlarge the font size to suit slide show -->
+<style>
+    div.output_result {
+    font-size:150%;
+    line-height:150%;
+    }
+    
+    div.output_stdout { 
+    font-size:150%;
+    line-height:150%;
+    }
+
+    div.prompt { /* hidden by the js block at the end */
+    font-size:100%;
+    line-height:100%;
+    }
+
+    div.CodeMirror { /* Code cell */
+    font-size:150%;
+    line-height:150%;
+    }
+    
+    div.text_cell_render { /* Markdown cell */
+    font-family: 'Times New Roman';
+    font-size:150%;
+    line-height:150%;
+    }
+</style>
+
+<!-- hide elements on the left to center the slides -->
+<script>
+    $(document).ready(function(){
+        $('div.prompt').hide();
+        $('div.back-to-top').hide();
+        $('nav#menubar').hide();
+        $('.breadcrumb').hide();
+        $('.hidden-print').hide();
+    });
+</script>
